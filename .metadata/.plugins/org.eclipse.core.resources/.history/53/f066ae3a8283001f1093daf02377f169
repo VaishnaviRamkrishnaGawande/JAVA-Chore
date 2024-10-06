@@ -1,0 +1,68 @@
+package Test5;
+import java.util.Scanner;
+public class TestInheritance {
+
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	int choice=0;
+	
+	do {
+		System.out.println("1.Accept new Data\n 2.Delete Data\n 3.Update Marks\n 4.Display All Graduate Student\n 5.Display All Master Student\n 6.Display All\n 7.Exit\n Enter Your Choice:\n");
+		System.out.println("Enter Choice :");
+		choice = sc.nextInt();
+		switch (choice) {
+	case 1:
+		System.out.println("1.Graduate Student\n 2.Master Student\n 3.Choice:");
+		int ch=sc.nextInt();
+		PersonService.addNewData(ch);
+		break;
+	case 2:
+		break;
+	case 3:
+		break;
+	case 4:
+		Student[] arr=PersonService.displayAll();
+		for(Student s1:arr) {
+			if(s1 instanceof GraduateStudent){
+				System.out.println(s1);
+			}
+		}
+		break;
+	case 5:
+		arr=PersonService.displayAll();
+		for(Student s1: arr) {
+			if(s1 instanceof MasterStudent)
+			System.out.println(s1);
+		}
+		break;
+	case 6:
+		Student[] sarr = PersonService.displayAll();
+		for(Student s:sarr) {
+			if(s!=null) {
+				System.out.println(s);
+			}else {
+				break;
+			}
+		}
+		break;
+	case 7:
+		System.out.println("Thank you");
+		//System.exit(7);
+		sc.close();
+		break;
+		default:
+			System.out.println("Wrong Entry");
+			break;
+	}
+	}while(choice != 7);
+	
+	}
+	
+	}	
+
+
+	
+
+	
+
+

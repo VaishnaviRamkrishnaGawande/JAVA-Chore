@@ -1,0 +1,28 @@
+package Test;
+
+public class Student {
+	private int sid;
+	private String sname;
+	private float mark1;
+	private float mark2;
+	private float mark3;
+	
+	public Student(){
+		sid=0;
+		sname=null;
+		mark1=0;
+		mark2=0;
+		mark3=0;	
+	}
+	public Student (int id,String nm, float m1,float m2,float m3) {
+		this.sid=id;
+		this.sname=nm;
+		this.mark1=m1;
+		this.mark2=m2;
+		this.mark3=m3;
+	}
+	
+	//Sette method
+	 public void set
+
+}

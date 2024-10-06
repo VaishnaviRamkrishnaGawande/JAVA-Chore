@@ -1,0 +1,12 @@
+package Test;
+import java.util.*;
+public class Ex2 {
+
+	public static void main(String[] args) {
+		int a[][]= {{1,2},{3,4}};
+		int b[][]= {{5,6},{7,8}};
+		int c[][]=new int[2][2];
+		Ex2Service.multiplyArray();
+		System.out.println("Result");
+		Ex2Service.displayArray();
+	}

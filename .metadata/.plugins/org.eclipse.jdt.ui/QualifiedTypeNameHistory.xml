@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+    <fullyQualifiedTypeName name="Test5.MasterStudent"/>
+    <fullyQualifiedTypeName name="Test5.Person"/>
+    <fullyQualifiedTypeName name="Test5.Student"/>
+    <fullyQualifiedTypeName name="Test5.PersonService"/>
+    <fullyQualifiedTypeName name="Test5.GraduateStudent"/>
+</qualifiedTypeNameHistroy>

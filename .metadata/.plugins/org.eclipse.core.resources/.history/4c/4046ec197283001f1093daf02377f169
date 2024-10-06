@@ -1,0 +1,52 @@
+package Test5;
+import java.util.Scanner;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class PersonService {
+         static Student[] sarr;
+         static int cnt;
+         static {
+        	 sarr = new Student[10];
+        	 
+        	sarr[0]=new MasterStudent("Sahil", "Mumbai", 89);
+             cnt=1;
+         }
+         
+         public static void addNewData(int  ch) {
+        	 Scanner sc=new Scanner(System.in);
+        	 System.out.println("Enter ID:");
+        	 int id=sc.nextInt();
+        	 System.out.println("Enter Name:");
+        	 String nm=sc.next();
+        	 System.out.println("Enter Address:");
+        	 String addr=sc.next();
+        	 System.out.println("Enter Birthdate (dd/MM/yyy)");
+        	 String dt=sc.next();
+        	 LocalDate ldt=LocalDate.parse(dt,DateTimeFormatter.ofPattern("dd/MM/yyy"));
+        	 
+        	 int[] marks=new int[2];
+        	 if(ch==1 || ch==2) {
+        		 System.out.println("Enter marks1");
+        		 marks[0]=sc.nextInt();
+        	     System.out.println("Enter marks2");
+        	     marks[1]=sc.nextInt();
+        	 }if(ch==1) {
+        		 System.out.println("Enter Special marks");
+        		 int spmarks=sc.nextInt();
+        		 
+				sarr[cnt]=new GraduateStudent(id,nm,addr,ldt,marks,spmarks);
+        	 }else {
+        		 System.out.println("Enter Thessis subject");
+        		 String tsub=sc.next();
+        		 System.out.println("Enter Degree");
+        		 String dg=sc.next();
+        		 System.out.println("Enter Thessis marks");
+        		 int tmarks=sc.nextInt();
+        	 }	 
+        	 }
+        	 public static void displayAll() {
+        		 return sarr;
+        	 }
+        	 }
+

@@ -1,0 +1,12 @@
+package Test;
+
+import java.util.Date;
+
+public class TestStudent {
+
+	public static void main(String[] args) {
+		Student s=new Student(1,"VaishnaviGawande",23.3,12.3,13.4);
+		System.out.println(s);
+
+	}
+}

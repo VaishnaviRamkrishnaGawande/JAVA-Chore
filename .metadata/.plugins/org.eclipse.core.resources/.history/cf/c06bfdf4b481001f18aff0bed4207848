@@ -1,0 +1,39 @@
+package Test;
+import java.util.*;
+public class Ex4 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a size you want");
+		int n=sc.nextInt();
+		 int[][] matrix=new int[n][n];
+			  int choice =0;
+	  do {
+		  System.out.println("1.Accept 2 Array\n 2.Display 2 array\n 3.Add two array\n 4.Multiply 2 array\n 5.Check Symmetric Matrix\n 6.Exit\n");
+		  choice=sc.nextInt();
+		  switch(choice) {
+		   case 1:
+			 System.out.println("Enter array element");
+			  break;
+		   case 2:
+				 System.out.println("Display array element");
+				  break;
+		   case 3:
+				 System.out.println("Addition of Two Array");
+				  break;
+		   case 4:
+				 System.out.println("Multiplication of Two Array");
+				  break;
+		   case 5:
+				 System.out.println("");
+				  break;
+		   case 6:
+				 System.out.println("Thanks for visiting!!!");
+				  break;
+				  default:
+					  System.out.println("Wrong entry...");
+		 	  
+		  }
+		  }while(choice!=7);
+		  }
+	}

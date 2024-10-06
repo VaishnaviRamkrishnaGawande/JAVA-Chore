@@ -1,0 +1,31 @@
+package Test5;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+
+public class Student extends Person{
+         private int[] marks;
+
+		public int[] getMarks() {
+			return marks;
+		}
+
+		public void setMarks(int[] marks) {
+			this.marks = marks;
+		}
+
+		public Student() {
+			super();
+		}
+
+		public Student(int pid, String pname, String address, LocalDate bdate,int[] marks) {
+			super();
+			this.marks = marks;
+		}
+
+		@Override
+		public String toString() {
+			return super.toString()+"Student [marks=" + Arrays.toString(marks) + "]";
+		}
+         
+}

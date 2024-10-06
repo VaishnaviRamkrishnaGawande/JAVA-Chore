@@ -1,0 +1,57 @@
+package Test;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.text.ParseException;
+import java.util.*;
+
+public class PersonService {
+	private static Person[] parr;
+	private static int cnt;
+	static
+	{
+		parr= new Person[10];
+		parr[0]=new Person (96,"Vaishnavi","674536458",new Date(2002,08,05));
+		parr[1]=new Person (95,"Vaish","8454392",new Date(2002,07,10));	
+	}
+	public static void addNewPerson()
+	{
+		Scanner sc =new Scanner(System.in);
+		System.out.println("Enter Id : ");
+		int pid=sc.nextInt();
+		sc.nextLine();
+		
+		System.out.println("Enter Name : ");
+		String pnm=sc.nextLine();
+		
+		System.out.println("Enter Mobile num : ");
+		String pmob=sc.next();
+		
+		System.out.println("Enter Date : ");
+		String pdate=sc.next();
+	}
+	
+	public static Person [] displayAll()
+	{
+		return parr;
+	}
+	
+	public static Person getByid(int id)
+	{
+		for(Person p: parr)
+		{
+			if(p!=null)
+			{
+				if(p.getByid()==id)
+				{
+					return p;
+				}
+				else
+				{
+					return null;
+				}
+			}
+			return null;
+		}
+	}
+
+}

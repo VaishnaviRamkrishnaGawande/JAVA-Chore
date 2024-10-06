@@ -1,0 +1,10 @@
+package Test;
+
+public class TestStudent {
+
+	public static void main(String[] args) {
+		Student s=new Student(1,"VaishnaviGawande","9579594352")
+
+	}
+
+}

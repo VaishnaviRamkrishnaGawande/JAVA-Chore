@@ -1,0 +1,36 @@
+package Day1;
+import java.util.Scanner;
+import java.util.*;
+class Number {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int sum=0;
+	 for(int i=0;i<10;i++) {
+		 System.out.println("Enter a number");
+		 int a=sc.nextInt();
+		 sum=sum+prime(a);
+	 }
+	 
+
+	}
+	
+	public static int prime(int a) {
+		boolean isPrime=false;
+		if(a==2)
+		{
+			isPrime =true;
+		}
+		for(int i=3;i<a;i++) {
+			if(a%i==0) {
+				isPrime=true;
+			}
+		}
+		if (isPrime) {
+			return a;
+		}else {
+			return 0;
+		}
+	}
+
+}
